@@ -13,12 +13,12 @@ parser.add_argument('-a', '--add', help="Add a device's Mac address to the datab
 args = parser.parse_args()
 
 class Device(object):
-	def __init__(self, name, mac):
-		self.name = name
-		self.mac = mac
-		self.home = False
-		self.changed = False
-		self.found = False
+    def __init__(self, name, mac):
+        self.name = name
+        self.mac = mac
+        self.home = False
+	self.changed = False
+        self.found = False
 
 	def isHome(self):
 		return self.home
