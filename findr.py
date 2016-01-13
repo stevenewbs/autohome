@@ -17,7 +17,7 @@ class Device(object):
         self.name = name
         self.mac = mac
         self.home = False
-	self.changed = False
+        self.changed = False
         self.found = False
 
 	def isHome(self):
